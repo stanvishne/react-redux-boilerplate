@@ -30,6 +30,14 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "eslint-loader",
+        options: {
+          // eslint options (if necessary)
+        }
+      },
+      {
         // https://github.com/jtangelder/sass-loader
         test: /\.scss$/,
         loaders: ['style', 'css', 'sass'],

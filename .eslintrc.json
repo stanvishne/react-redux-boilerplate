@@ -1,0 +1,18 @@
+{
+    "extends": "airbnb",
+    "globals": {
+        "document": true,
+        "window": true
+      },
+    "rules": {
+        "react/jsx-filename-extension": [1, {"extensions": [".js"]}],
+        "react/prop-types": [{"skipUndeclared": true}],
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+        "import/no-named-as-default": 0,
+        "comma-dangle": 0,
+        "react/prefer-stateless-function": 0,
+        "import/prefer-default-export": 0,
+        "no-nested-ternary": 0
+        
+    }
+}

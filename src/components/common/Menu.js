@@ -1,6 +1,6 @@
-import React from "react";
-import { Nav, NavItem, Glyphicon, Navbar, NavDropdown, MenuItem } from "react-bootstrap";
-import { IndexLinkContainer, LinkContainer } from "react-router-bootstrap";
+import React from 'react';
+import { Nav, NavItem, Glyphicon, Navbar } from 'react-bootstrap';
+import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
 
 export default class Menu extends React.Component {
   render() {
@@ -11,20 +11,18 @@ export default class Menu extends React.Component {
             <a href="/">REACT START APP</a>
           </Navbar.Brand>
         </Navbar.Header>
-  
         <Nav bsStyle="pills">
           <IndexLinkContainer to="/">
             <NavItem>
               Home
             </NavItem>
           </IndexLinkContainer>
-                    
           <LinkContainer to="/about">
             <NavItem>
-              About <Glyphicon glyph="tasks"/>
+              About <Glyphicon glyph="tasks" />
             </NavItem>
-          </LinkContainer> 
-                  
+          </LinkContainer>
+
         </Nav>
       </Navbar>
     );
