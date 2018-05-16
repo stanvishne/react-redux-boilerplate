@@ -1,35 +1,23 @@
-import React from "react";
-import { connect } from "react-redux";
-import { ProgressBar } from "react-bootstrap";
-import Menu from "./common/Menu";
-import "../stylesheets/main.scss";
-import GlobalModal from "./common/GlobalModal";
-// App component
-export class App extends React.Component {
-  // pre-render logic
-  componentWillMount() {
-    // the first time we load the app, we need that users list
-   // this.props.dispatch({type: 'USERS_FETCH_LIST'});
-  }
+import React from 'react';
+import { connect } from 'react-redux';
+import Menu from './common/Menu';
+import '../stylesheets/main.scss';
+import GlobalModal from './common/GlobalModal';
 
-  // render
+export class App extends React.PureComponent {
   render() {
-    // show the loading state while we wait for the app to load
-    const {users, children} = this.props;
-    
-
-    // render
+    const { children } = this.props;
     return (
-      <div className="easapr-demo">
+      <div className="start-app">
         <div>
-          <Menu/>
+          <Menu />
         </div>
-        <GlobalModal/>
+        <GlobalModal />
         <div>
           {children}
         </div>
         <div className="footer">
-          <div>EASAPR - DEMO</div>
+          <div>FOOTER</div>
         </div>
       </div>
     );

@@ -1,12 +1,6 @@
 
-const modalContentMapper = {
-	WATER_EDITOR: 'WATER_EDITOR',
-	ELECTRO_EDITOR: 'ELECTRO_EDITOR',
-	WATER_EXT_EDITOR: 'WATER_EXT_EDITOR',
-};
+const modalContentMapper = {};
 
-const modalContentComponents = {
-	
-};
+const modalContentComponents = {};
 
-export { modalContentMapper, modalContentComponents}
+export { modalContentMapper, modalContentComponents };

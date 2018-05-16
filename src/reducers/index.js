@@ -1,6 +1,6 @@
-import { combineReducers } from "redux";
-import { routerReducer } from "react-router-redux";
-import { reducer as formReducer } from "redux-form";
+import { combineReducers } from 'redux';
+import { routerReducer } from 'react-router-redux';
+import { reducer as formReducer } from 'redux-form';
 import modal from './modal';
 import login from './login';
 
@@ -9,6 +9,6 @@ import login from './login';
 export const reducers = combineReducers({
   routing: routerReducer,
   form: formReducer.plugin({}),
-  login: login,
-  modal: modal
+  login,
+  modal
 });

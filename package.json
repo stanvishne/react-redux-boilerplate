@@ -1,13 +1,12 @@
 {
-  "name": "EWApp",
+  "name": "react-redux-boilerplate",
   "version": "1.0.0",
-  "description": "Water & Electricity data saving and calculating app",
+  "description": "react redux boilerplate",
   "keywords": [
     "react",
     "redux"
   ],
   "main": "index.js",
-  "homepage": "",
   "repository": {
     "type": "git",
     "url": ""
@@ -54,6 +53,12 @@
     "clean-webpack-plugin": "^0.1.15",
     "css-loader": "^0.26.1",
     "enzyme": "^2.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.2",
     "extract-text-webpack-plugin": "^1.0.1",
     "ignore-styles": "^5.0.1",
     "mocha": "^3.2.0",
