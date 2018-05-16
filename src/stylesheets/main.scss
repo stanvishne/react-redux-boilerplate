@@ -1,0 +1,44 @@
+$bgColor: #ffffff;
+
+.easapr {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  .easapr-demo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    .page-container {
+      padding: 50px 150px;
+      height: 90%;
+      background-color: rgba($bgColor, .8);
+      &.login {
+         padding: 50px 350px;
+      }
+    }
+    
+    .footer {
+      clear: both;
+      margin-bottom: 50px;
+      text-align: center;
+    
+      img {
+        width: 40px;
+        padding-right: 5px;
+      }
+    
+      span {
+        vertical-align: middle;
+      }
+    }
+  }
+  .progress {
+    margin: 10px auto;
+    width: 300px;
+  }
+}  
+
