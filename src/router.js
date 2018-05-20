@@ -6,10 +6,13 @@ import Home from './components/Home';
 import NotFound from './components/NotFound';
 import Auth from './components/Auth/Auth';
 import About from './components/About';
+import Report1 from './components/report/Report1';
+import Report2 from './components/report/Report2';
 
 function checkAuth(nextState, replace, store) {
   const state = store.getState();
   // const auth = process.env.NODE_ENV === 'production';
+  /*
   const auth = true;
   if (!state.login && auth) {
     replace({
@@ -17,6 +20,7 @@ function checkAuth(nextState, replace, store) {
       state: { nextPathname: nextState.location.pathname },
     });
   }
+  */
 }
 
 // build the router
@@ -28,6 +32,8 @@ const router = store => (
         onEnter={(nextState, replace) => checkAuth(nextState, replace, store)}
       />
       <Route path="about" component={About} onEnter={(nextState, replace) => checkAuth(nextState, replace, store)} />
+      <Route path="report1" component={Report1} onEnter={(nextState, replace) => checkAuth(nextState, replace, store)} />
+      <Route path="report2" component={Report2} onEnter={(nextState, replace) => checkAuth(nextState, replace, store)} />
       <Route path="auth" component={Auth} />
       <Route path="*" component={NotFound} />
     </Route>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, NavItem, Glyphicon, Navbar } from 'react-bootstrap';
+import { Nav, NavItem, Glyphicon, Navbar, NavDropdown, MenuItem } from 'react-bootstrap';
 import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
 
 export default class Menu extends React.Component {
@@ -22,6 +22,19 @@ export default class Menu extends React.Component {
               About <Glyphicon glyph="tasks" />
             </NavItem>
           </LinkContainer>
+          <NavDropdown title="Отчеты" id="basic-nav-dropdown">            
+              <LinkContainer to="/report1">
+                <MenuItem >
+                Отчет 1
+                </MenuItem>
+              </LinkContainer>  
+           
+              <LinkContainer to="/report2">
+              <MenuItem >
+              Отчет 2
+              </MenuItem>
+            </LinkContainer>  
+          </NavDropdown>
 
         </Nav>
       </Navbar>

@@ -29,14 +29,14 @@ module.exports = {
         loaders: ['react-hot', 'babel'],
         exclude: /node_modules/,
       },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "eslint-loader",
-        options: {
-          // eslint options (if necessary)
-        }
-      },
+      // {
+      //   test: /\.js$/,
+      //   exclude: /node_modules/,
+      //   loader: "eslint-loader",
+      //   options: {
+      //     // eslint options (if necessary)
+      //   }
+      // },
       {
         // https://github.com/jtangelder/sass-loader
         test: /\.scss$/,

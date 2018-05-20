@@ -28,8 +28,10 @@
   "author": "Stan Vishne",
   "license": "MIT",
   "dependencies": {
+    "babel-eslint": "^8.2.3",
     "dotenv": "^4.0.0",
     "react": "^15.4.2",
+    "react-autosuggest": "^9.3.4",
     "react-bootstrap": "^0.32.1",
     "react-datepicker": "^0.56.0",
     "react-dom": "^15.4.2",
@@ -55,6 +57,7 @@
     "enzyme": "^2.7.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-standard-react": "^6.0.0",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
